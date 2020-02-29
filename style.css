@@ -212,3 +212,9 @@ i {
         grid-template-columns: 0.2fr 1fr;
     }
 }
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .container-formation-exp {
+        grid-template-columns: 0.6fr 1fr;
+    }
+}
