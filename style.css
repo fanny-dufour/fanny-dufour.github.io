@@ -13,8 +13,8 @@ body {
     grid-template-areas: ". image . titre ."
                         ". contact . formation ."
                         ". about . experience ."
-                        ". about .  benevolat ."
-                        ". loisirs . benevolat .";
+                        ". about .  recommandations ."
+                        ". loisirs . recommandations .";
 }
 
 @media (max-width: 1024px) {
@@ -27,7 +27,7 @@ body {
                             "contact"
                             "formation"
                             "experience"
-                            "benevolat"
+                            "recommandations"
                             "about"
                             "loisirs";
     }
@@ -178,9 +178,28 @@ i {
     padding-bottom: 20px;
 }
 
-#benevolat {
-    grid-area: benevolat;
+#recommandations {
+    grid-area: recommandations;
     padding-bottom: 20px;
+}
+
+.reco-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "reco-1 reco-2";
+}
+
+.reco-1, .reco-2 {
+    display: inline-block;
+}
+
+.reco-1 {
+    grid-area: reco-1;
+}
+
+.reco-2 {
+    grid-area: reco-2;
 }
 
 
