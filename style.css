@@ -7,14 +7,16 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 0.2fr 0.3fr 70px 1fr 0.2fr;
+    max-width: 1400px;
+    margin: auto;
+    grid-template-columns: 0.7fr 50px 2fr;
     grid-template-rows: repeat(5, auto);
     grid-column-gap: 30px;
-    grid-template-areas: ". image . titre ."
-                        ". contact . formation ."
-                        ". about . experience ."
-                        ". about .  recommandations ."
-                        ". loisirs . recommandations .";
+    grid-template-areas: "image . titre"
+                        "contact . formation"
+                        "about . experience"
+                        "about .  recommandations"
+                        "loisirs . recommandations";
 }
 
 @media (max-width: 1024px) {
@@ -98,7 +100,8 @@ p {
 }
 
 .infos {
-    padding-left: 1em;
+    padding: 2em;
+    text-align: justify;
 }
 
 #formation {
