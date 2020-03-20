@@ -1,0 +1,44 @@
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    color: rgb(64, 64, 64);
+}
+
+@media (min-width: 992px) { 
+    .photo {
+        background-color: #ffc107;
+    }
+}
+
+.container {
+    max-width: 1400px;
+}
+
+h1 {
+    font-size: 2.7rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+.job {
+    font-size: 1rem;
+}
+
+.small-circle {
+    font-size: 0.6rem;
+}
+
+.arial {
+    font-family: Arial;
+}
+
+.loisirs-icon {
+    font-size: 2.7rem;
+}
